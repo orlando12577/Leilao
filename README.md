@@ -164,4 +164,3 @@ Exemplo de visualização de usuários:
 - Exemplo de consulta de endereço:
 
  <img src="https://github.com/orlando12577/Leilao/blob/Corre%C3%A7%C3%B5es/Arquivos/Endereço.jpeg" alt="BD" />
->>>>>>> Correções
