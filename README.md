@@ -106,8 +106,6 @@ O novo sistema visa direcionar o escopo inicial para leilões específicos de:
 
 - Veículos: carros e motocicletas de passeio, caminhões e utilitários apreendidos.
 
-<<<<<<< HEAD
-=======
 
 ### Sequencia de tarefas da aplicação com a inserção dos testes : 
 
