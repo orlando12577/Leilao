@@ -111,5 +111,5 @@ O novo sistema visa direcionar o escopo inicial para leilões específicos de:
 
 1) Inicialmente, e possivel inserir todos pelo proprio banco de dados.
 
- <img src="https://github.com/orlando12577/leilao/raw/correções/Arquivos/Banco_Dados.jpeg" alt="BD" />
+ <img src="https://github.com/orlando12577/Leilao/blob/Corre%C3%A7%C3%B5es/Arquivos/Banco_Dados.jpeg" alt="BD" />
 
