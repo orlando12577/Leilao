@@ -107,6 +107,53 @@ O novo sistema visa direcionar o escopo inicial para leilões específicos de:
 - Veículos: carros e motocicletas de passeio, caminhões e utilitários apreendidos.
 
 
+## Funcionalidade da Configuração e Teste da Aplicação com H2 e Swagger:
+
+
+Tutorial de Configuração e Teste da Aplicação com H2 e Swagger
+1. Configuração do Banco de Dados H2
+- A aplicação utiliza o H2, um banco de dados em memória RAM.
+- A configuração do H2 está no arquivo application.properties. Ao iniciar a aplicação, ele vai ler todas as entidades e criar as tabelas no banco de dados automaticamente.
+
+2. Dados Iniciais (data.sql)
+O arquivo data.sql contém os dados iniciais para popular o banco.
+A sequência sugerida para inserção é:
+1) Usuários: Crie os usuários primeiro.
+2) Endereços: Após os usuários, crie os endereços e relacione-os com os IDs dos usuários.
+3) Financeiras: Insira os dados das entidades financeiras.
+4) Leilões e Produtos: Crie os leilões e associe os produtos aos leilões.
+
+3. Execução do data.sql
+- Após configurar e iniciar a aplicação, execute o data.sql para inserir os dados iniciais.
+- Isso permite que você teste a aplicação com informações pré-carregadas.
+
+4. Acessando o Banco H2
+- Para consultar os dados no H2, acesse a interface web do banco em :
+  
+```bash
+  http://localhost:8080/h2/
+```
+
+As configurações de login estão definidas no application.properties.
+
+
+5. Utilizando o Swagger
+- Para inserir ou consultar dados pela API, utilize o Swagger. Acesse:
+
+
+Ordem sugerida para inserções via Swagger:
+Crie um usuário.
+Crie um endereço e relacione-o com o ID do usuário.
+Insira as financeiras.
+Adicione leilões e produtos associados.
+
+
+
+6. Testando e Modificando os Dados
+- Após rodar o data.sql, você pode fazer alterações ou novas inserções tanto pelo H2 Console quanto pelo Swagger.
+- Se preferir não rodar o data.sql, você pode inserir os dados diretamente via Swagger seguindo a ordem indicada.
+
+
 ### Sequencia de tarefas da aplicação com a inserção dos testes : 
 
 1) Inserindo Informações no Banco de Dados: 
